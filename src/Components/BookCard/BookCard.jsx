@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { Div, Main } from "../../style";
 
 export const BookCard = ({ id, imageUrl, title, price }) => {
   // Bookcard is a card looking component, that is also a 'Link' for react-router
@@ -19,4 +19,16 @@ export const BookCard = ({ id, imageUrl, title, price }) => {
   // <YourStyledLink to={}>
   //    title, image price etc here
   // </YourStyledLink>
+  return (
+    <>
+      <Div>
+        <Link to={id}>
+          <img src={imageUrl} alt="image" />
+
+          <h2>{title}</h2>
+          <p>{price}</p>
+        </Link>
+      </Div>
+    </>
+  );
 };
