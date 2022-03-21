@@ -4,7 +4,7 @@ import { Section } from "../Components/Section/Section";
 import { BookDetailsPage } from "../Components/BookDetailsPage/BookDetailsPage";
 import { NotFound } from "../Components/NotFound/NotFound";
 import { Navbar } from "../Components/Navbar/Navbar";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 export const AllRoutes = () => {
   return (
